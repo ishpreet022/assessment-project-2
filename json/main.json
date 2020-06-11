@@ -1,0 +1,49 @@
+[{
+        "ID": "001",
+        "CLOTHTYPE": "T-shirt"
+    },
+    {
+        "ID": "002",
+        "CLOTHTYPE": "Sweater"
+    },
+    {
+        "ID": "003",
+        "CLOTHTYPE": "Casual Shirts"
+    },
+    {
+        "ID": "004",
+        "CLOTHTYPE": "Formal Shirts"
+    },
+    {
+        "ID": "005",
+        "CLOTHTYPE": "Sweatshirts"
+    },
+    {
+        "ID": "006",
+        "CLOTHTYPE": "Jacket"
+    },
+    {
+        "ID": "007",
+        "CLOTHTYPE": "Coats"
+    },
+    {
+        "ID": "008",
+        "CLOTHTYPE": "Clothing Fabric"
+    },
+    {
+        "ID": "009",
+        "CLOTHTYPE": "Jeans"
+    },
+    {
+        "ID": "010",
+        "CLOTH-TYPE": "Casual-trousers"
+    },
+    {
+        "ID": "011",
+        "CLOTHTYPE": "Formal-trousers"
+    },
+    {
+        "ID": "012",
+        "CLOTHTYPE": "Track-paints"
+    }
+]
