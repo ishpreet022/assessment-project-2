@@ -1,5 +1,4 @@
-document.getElementById('firstbutton').addEventListener('click', getText);
-document.getElementById('firstbutton').addEventListener('click', getText);
+document.getElementById('.clothsbrands').addEventListener('click', getText);
 
 function getText() {
     // AJAX Call
@@ -27,7 +26,7 @@ function getText() {
     xhr.send();
 }
 
-document.getElementById('secondbutton').addEventListener('click', getAText);
+document.getElementById('.clothstype').addEventListener('click', getAText);
 
 function getAText() {
     // AJAX Call
@@ -47,7 +46,7 @@ function getAText() {
                 '<li>ID : ' + user.CLOTHTYPE + '</li>' +
                 '</ul>';
 
-            document.getElementById('firstcontainer').innerHTML = output;
+            document.getElementById('secindcontainer').innerHTML = output;
         }
     }
 

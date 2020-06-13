@@ -4,7 +4,7 @@
     },
     {
         "ID": "02",
-        "BRAND": "REEBOK"
+        "BRAND": "ARMANI"
     },
     {
         "ID": "03",
@@ -21,5 +21,29 @@
     {
         "ID": "06",
         "BRAND": "JACK & JONS"
+    },
+    {
+        "ID": "07",
+        "BRAND": "FENDI"
+    },
+    {
+        "ID": "08",
+        "BRAND": "BURBERRY"
+    },
+    {
+        "ID": "09",
+        "BRAND": "HERMENS"
+    },
+    {
+        "ID": "10",
+        "BRAND": "HOUSE OF VERSAXE"
+    },
+    {
+        "ID": "11",
+        "BRAND": "RALPH LAUREN"
+    },
+    {
+        "ID": "12",
+        "BRAND": "GUCCI"
     }
 ]
