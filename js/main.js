@@ -1,24 +1,26 @@
-document.getElementById('.clothsbrands').addEventListener('click', getText);
+document.getElementById('clothsbrands').addEventListener('click', getText);
 
 function getText() {
     // AJAX Call
     // Create an Object
-    var xhr = XMLHttpRequest();
+    var xhr = new XMLHttpRequest();
 
     // Open the portal
-    xhr.open('GET', 'main2.json', true);
+    xhr.open('GET', '../json/main2.json', true);
 
     // Communication
     xhr.onload = function() {
         if (this.status == 200) {
-            var user = JSON.parse(this.responceText);
-            var output = '';
-            output += '<ul>' +
-                '<li>ID : ' + user.ID + '</li>' +
-                '<li>ID : ' + user.BRAND + '</li>' +
-                '</ul>';
+            var users = JSON.parse(this.responseText);
+            var outputs = '';
+            for (var i = 0; i < users.length; i++) {
+                outputs += '<ul>' +
+                    '<li>' + users[i].ID + 
+                    ' : ' + users[i].BRAND + '</li>' +
+                    '</ul>';
+            }
 
-            document.getElementById('firstcontainer').innerHTML = output;
+            document.getElementById('firstcontainer').innerHTML = outputs;
         }
     }
 
@@ -26,30 +28,32 @@ function getText() {
     xhr.send();
 }
 
-document.getElementById('.clothstype').addEventListener('click', getAText);
+document.getElementById('clothstype').addEventListener('click', getAText);
 
 function getAText() {
     // AJAX Call
     // Create an Object
-    var xhr = XMLHttpRequest();
+    var xhra = new XMLHttpRequest();
 
     // Open the portal
-    xhr.open('GET', 'main.json', true);
+    xhra.open('GET', '../json/main.json', true);
 
     // Communication
-    xhr.onload = function() {
+    xhra.onload = function() {
         if (this.status == 200) {
-            var user = JSON.parse(this.responceText);
+            var user = JSON.parse(this.responseText);
             var output = '';
-            output += '<ul>' +
-                '<li>ID : ' + user.ID + '</li>' +
-                '<li>ID : ' + user.CLOTHTYPE + '</li>' +
-                '</ul>';
+            for (var i = 0; i < user.length; i++) {
+                output += '<ul>' +
+                    '<li>' + user[i].ID + 
+                    ' : ' + user[i].CLOTHTYPE + '</li>' +
+                    '</ul>';
+            }
 
-            document.getElementById('secindcontainer').innerHTML = output;
+            document.getElementById('secondcontainer').innerHTML = output;
         }
     }
 
     // Send the request
-    xhr.send();
+    xhra.send();
 }
